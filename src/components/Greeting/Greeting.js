@@ -1,7 +1,6 @@
-export const Greeting = () => {
-    return <h1>Primer componente</h1>
-}
+// En vez de usar name ? name : 'Componente sin nombre' (que ademas queda feo poner name ? name xD), react incorpora estos props donde le pasas un valor por defecto si este no lo llama
+export const Greeting = ({ name = "Componente sin nombre" }) => {
+  return <h1>{name}</h1>;
+};
 
-export const MiName = () => {
-    return <h3>¡Hola! Mi nombre es PokeSer</h3>
-}
+export default Greeting;
